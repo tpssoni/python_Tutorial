@@ -63,5 +63,3 @@ def contacts(request):
     contacts = get_my_contacts(access_token)
     context = { 'contacts': contacts['value'] }
     return render(request, 'tutorial/contacts.html', context)
-
-    
